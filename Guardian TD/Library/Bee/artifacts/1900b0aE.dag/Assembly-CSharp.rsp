@@ -115,8 +115,8 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"C:/Users/Asus/Guardian TD/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
--r:"C:/Users/Asus/Guardian TD/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"C:/Users/Asus/Dropbox/PC/Documents/Git_sharing/Guardian TD/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll"
+-r:"C:/Users/Asus/Dropbox/PC/Documents/Git_sharing/Guardian TD/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"D:/2021.2.10f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"D:/2021.2.10f1/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
 -r:"D:/2021.2.10f1/Editor/Data/Managed/UnityEngine/UnityEditor.DiagnosticsModule.dll"
@@ -345,6 +345,7 @@
 "Assets/Classes/enemies/Enemy.cs"
 "Assets/Classes/Game/Entitysummoner.cs"
 "Assets/Classes/Game/GameloopManager.cs"
+"Assets/Classes/Player/Enemy_placer.cs"
 "Assets/Classes/Player/PlayerMovement.cs"
 "Assets/Classes/Player/TowerPlacement.cs"
 "Assets/Classes/scriptableobjectsources/Enemiessummondata.cs"
