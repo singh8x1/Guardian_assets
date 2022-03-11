@@ -5,8 +5,11 @@ using UnityEngine;
 public class GameloopManager : MonoBehaviour
 {
     // Start is called before the first frame update
+    /** \To check the summoned enemy in game */
     private static Queue<int> EnemyIDsToSummon;
+    /** \To know about game end or wave end */
     public bool Loopshouldend;
+   
     private void Start()
     {
         EnemyIDsToSummon = new Queue<int>();
@@ -24,10 +27,18 @@ public class GameloopManager : MonoBehaviour
      //       Entitysummoner.RemoveEnemy(Entitysummoner.EnemiesInGame[Random.Range(0, Entitysummoner.EnemiesInGame.Count)]);
      //   }
    // }
+
+    /// <summary>
+    /// Enemy summon test case to summon one slime ID 1
+    /// </summary>
     void SummonTest()
     {
         EnqueueEnemyIDToSummon(1);
     }
+    /// <summary>
+    /// Gameloop to start and end game after a wave or so
+    /// </summary>
+    /// <returns></returns>
    IEnumerator Gameloop()
     {
         while (Loopshouldend==false)
@@ -59,6 +70,11 @@ public class GameloopManager : MonoBehaviour
 
         }
     }
+
+    /// <summary>
+    /// Quesuing enemies to spawn in game using their ID to summon
+    /// </summary>
+    /// <param name="ID"></param>
 
     public static void EnqueueEnemyIDToSummon(int ID)
     {

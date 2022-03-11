@@ -1,13 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// spawing projectile on head of tower 
+/// </summary>
 public class SpawnProjectle : MonoBehaviour
 {
     // Start is called before the first frame update
+    /** \set tower crystal as firepoint */
     public GameObject firePoint;
+    /** \creating list of Vfx that are used to spawn a projectile */
     public List<GameObject> vfx = new List<GameObject> ();
 
+    /** \to set effect of spawining on crystal of tower */
     private GameObject effectToSpawn;
     void Start()
     {
@@ -22,7 +27,9 @@ public class SpawnProjectle : MonoBehaviour
             SpawnVFX();
         }
     }
-
+    /// <summary>
+    /// spawning vfx 
+    /// </summary>
    void SpawnVFX()
     {
         GameObject vfx;

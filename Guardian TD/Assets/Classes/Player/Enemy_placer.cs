@@ -1,11 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Class created to place enemies on map forcefully
+/// </summary>
 public class Enemy_placer : MonoBehaviour
 {
+    /** \Collider mask so eneies wont overlap */
     [SerializeField] private LayerMask PlacementColliderMask;
+    /** \To Attach enemies to player camera and drag them to fit location for spawn */
     [SerializeField] private Camera PlayerCamera;
+    /** \To check the summoned enemy in game */
     private GameObject CurrentPlacingEnemy;
     // Start is called before the first frame update
 
@@ -16,6 +21,7 @@ public class Enemy_placer : MonoBehaviour
     //}
 
     // Update is called once per frame
+   
     void Update()
     {
         if (CurrentPlacingEnemy != null)
@@ -38,7 +44,10 @@ public class Enemy_placer : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// to place enemies in game same as set tower function
+    /// </summary>
+    /// <param name="SlimePBR"> this obejct os prefab of slime</param>
 
     public void SetTowerToPlace(GameObject SlimePBR)
     {

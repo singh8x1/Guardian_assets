@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
+
 {
-    // Start is called before the first frame update
-
+    /** \Max health of enemies in float */
     public float MaxHealth;
+    /** \health of enemies in float at an instance*/
     public float Health;
+    /** \speed of enemies movement in float */
     public float Speed;
+    /** \ enemies ID */
     public int ID;
-
-  public void Init()
+    /// <summary>
+    /// initializes the healthpool of enemies to max health of enemies
+    /// </summary>
+    public void Init()
     {
         Health = MaxHealth;
 

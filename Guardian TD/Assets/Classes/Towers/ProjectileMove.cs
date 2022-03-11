@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// projectile move behaviour
+/// </summary>
 public class ProjectileMove : MonoBehaviour
 {
+    /** \set spee of projectile */
     public float speed;
+    /** \set firerate of tower */
     public float fireRate;
 
     // Start is called before the first frame update

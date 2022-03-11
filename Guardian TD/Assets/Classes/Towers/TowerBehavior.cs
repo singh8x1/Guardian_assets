@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// setting behaviour of tower yet to be decided
+/// </summary>
 public class TowerBehavior : MonoBehaviour
 {
     
